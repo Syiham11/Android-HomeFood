@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="8dp"
+                android:scaleType="fitXY"
+                android:id="@+id/img_poster"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_title"
+                android:textColor="@color/colorPrimaryText"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:paddingBottom="4dp"
+                android:maxLines="1"
+                android:text="Title"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/txt_qty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:id="@+id/txt_price"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+        android:text="Price"
+        android:layout_below="@+id/txt_title"
+        android:layout_toEndOf="@+id/txt_qty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:id="@+id/txt_seller"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+        android:text="Seller"
+        android:layout_below="@+id/txt_price"
+        android:layout_toEndOf="@+id/txt_qty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:id="@+id/txt_qty"
+        android:background="@drawable/circle"
+        android:text="10"
+        android:gravity="center"
+        android:layout_marginLeft="104dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTime"
+        android:id="@+id/txt_time"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="18:30"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_pending"
+        android:padding="16dp"
+        android:id="@+id/img_info"
+        android:layout_alignBottom="@id/img_poster"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

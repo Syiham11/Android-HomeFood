@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:id="@+id/layout_desc">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_title"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:maxLines="1"
+            android:text="Name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txt_price"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:maxLines="1"
+            android:text="Price"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txt_seller"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:maxLines="1"
+            android:text="Seller"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txt_qty"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:maxLines="1"
+            android:text="Quantity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/txt_total"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:maxLines="1"
+            android:text="Total"/>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notes"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_option">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/divider"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/divider"
+            android:background="@color/colorNo"/>
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:background="@color/colorYes"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/divider" />
+
+    </RelativeLayout>
+
+</LinearLayout>
